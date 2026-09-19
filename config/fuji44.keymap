@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -71,10 +70,10 @@
 
         nav {
             bindings = <
-&bootloader  &trans  &trans  &trans  &trans  &trans    &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &bootloader
-&trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans          &trans        &trans        &trans
-&sys_reset   &trans  &trans  &trans  &trans  &trans    &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &sys_reset
-                     &trans  &trans  &trans  &trans    &trans  &trans        &trans          &trans
+&kp GRAVE       &kp LC(Q)     &kp LBRC         &kp RBRC        &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp PAGE_UP          &kp HOME             &kp UP               &kp END              &kp INSERT            &kp LC(F3)
+&kp TAB         &kp LEFT_WIN  &kp LEFT_ALT     &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LC(G)            &kp PAGE_DOWN        &kp LEFT             &kp DOWN             &kp RIGHT            &kp LS(LA(LC(SEMI)))  &kp SQT
+&kp LEFT_SHIFT  &kp LC(Z)     &kp LC(X)        &kp LC(C)       &kp LC(V)         &kp LC(B)            &kp LC(KP_NUMBER_4)  &kp LC(KP_NUMBER_6)  &kp LC(KP_NUMBER_7)  &kp LC(KP_NUMBER_9)  &kp SLASH             &kp LS(LC(F3))
+                              &kp PRINTSCREEN  &kp BACKSPACE   &trans            &mo 1                &trans               &mo 4                &kp DELETE           &kp K_MENU
             >;
         };
 
@@ -87,7 +86,7 @@
             >;
         };
 
-        sym {
+        mouse {
             bindings = <
 &kp LEFT_BRACE   &kp MINUS  &kp AMPERSAND          &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp PLUS        &trans  &trans      &trans     &trans        &trans         &trans
 &kp COMMA        &kp DOT    &kp DOLLAR             &kp PERCENT   &kp CARET             &kp EQUAL       &trans  &kp RSHIFT  &kp RCTRL  &kp LEFT_ALT  &kp RIGHT_WIN  &trans
