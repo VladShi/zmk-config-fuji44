@@ -62,10 +62,10 @@
 
         num {
             bindings = <
-&trans  &trans        &trans        &trans     &trans          &trans    &trans    &trans         &trans     &trans     &trans  &trans
-&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans  &trans
-&trans  &trans        &trans        &trans     &trans          &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &trans  &trans
-                      &trans        &trans     &trans          &trans    &trans    &trans         &trans     &trans
+&kp GRAVE     &kp EXCL      &kp AT        &kp HASH        &kp LPAR          &kp RPAR    &kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp ASTERISK  &kp COLON
+&kp TAB       &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp AMPS    &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp EQUAL     &kp KP_DOT
+&kp KP_ENTER  &kp DLLR      &kp PRCNT     &kp CARET       &trans            &kp PIPE    &kp KP_PLUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp KP_SLASH  &kp COMMA
+                            &kp CAPSLOCK  &kp UNDER       &mo 3             &trans      &mo 3         &trans        &kp UNDER     &kp KP_NUMLOCK
             >;
         };
 
